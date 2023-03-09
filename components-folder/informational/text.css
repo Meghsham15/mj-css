@@ -1,0 +1,127 @@
+section>aside>p {
+    --font-size-small: 1.1vw;
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+section>article>p {
+    --font-size-small: calc(var(--font-size-medium)*0.6);
+    /* background-color: var(--primary-color); */
+    width: 50%;
+    color: var(--black);
+}
+
+section>aside>h1 {
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+section>article>h1 {
+    background-color: var(--bg-none);
+    color: var(--black);
+    line-height: var(--line-height-l);
+}
+
+section>div>h1 {
+    --font-size-large: 4.5vw;
+    width: calc(var(--percent-val)*0.7);
+    margin: var(--padding) 0;
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+aside>div>p{
+    font-size: var(--font-size-h3);
+    margin: 0;
+}
+
+aside>div>a{
+    font-size:calc( var(--font-size-h3)*0.75);
+}
+
+section>aside>aside>p {
+    font-size: calc(var(--font-size-small)*1.2);
+    margin: var(--padding) 0;
+}
+
+section>aside>aside>a {
+    font-size: calc(var(--font-size-small)*1.2);
+    margin: var(--padding) 0;
+}
+
+section>div>aside>h1 {
+    font-size: calc(var(--font-size-large)*1.2);
+    margin: var(--cards-margin) auto;
+    color: var(--white);
+    background: var(--bg-none);
+}
+
+footer>small {
+    font-size: var(--font-footer-small);
+    /* line-height: 0.1vw; */
+    padding: var(--section-padding-y) 0;
+    border-bottom: 0.5px solid;
+    color: var(--gray);
+    background: var(--bg-none);
+}
+
+footer>div>aside>ul>li>p{
+    font-size: var(--footer-m);
+    color: var(--white);
+    background: var(--bg-none);
+}
+
+section>aside>ul>li>h2{
+    color: var(--font-gray);
+}
+
+[font-black="true"]>li>h2{
+    color: var(--black);
+}
+
+[font-white="true"]{
+    color: var(--white);
+}
+
+footer>div>aside>h4{
+    color: var(--gray);
+    background: var(--bg-none);
+}
+
+
+@media (max-width: 816px){
+    section>div>h1 {
+        --font-size-large: 10.5vw;
+        width: calc(var(--percent-val));
+    }
+
+    section>aside>p {
+        --font-size-small: 4.1vw;
+        background-color: var(--bg-none);
+        color: var(--black);
+    }
+
+    section > article > p {
+        --font-size-medium:  4.1vw;
+        background-color: var(--bg-none);
+        color: var(--black);
+        font-size: var(--font-size-medium);
+        width: var(--percent-val);
+    }
+
+    aside>ul>li>h2{
+        margin: var(--h2-margin) 0;
+    }
+
+    aside>ul>li>p{
+        display: none;
+    }
+
+    footer>div>aside>h4 {
+        margin-top: var(--h4-margin);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

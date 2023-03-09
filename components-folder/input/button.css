@@ -1,0 +1,52 @@
+section>aside>div>button{
+    padding: var(--button-padding);
+    font-size: var(--font-size-small);
+    margin-right: var(--button-margin-right);
+    background-color: var(--sky-blue);
+    color: var(--white);
+}
+
+section>div>article>div>ul>button{
+    background: var(--button-bg-gray);
+    color: var(--black);
+}
+
+section>aside>aside>button{
+    width: calc(var(--percent-val)*0.5);
+    height: calc(var(--percent-val)*0.35);
+    background: var(--setup-img);
+    border-radius: var(--border-radius);
+}
+
+form>button{
+    width: calc(var(--percent-val)*0.2);
+    font-size: var(--font-size-small);
+    border-radius: var(--input-border-radius);
+    padding: var(--input-padding);
+    background: var(--sky-blue);
+    color: var(--white);
+
+}
+
+[theme-button="true"]{
+    background: white;
+    color: black;
+}
+
+@media (max-width: 816px) {
+    section:nth-child(1)>aside>div>button {
+        margin-bottom: calc(var(--p-margin)*0.5);
+        width: calc(var(--percent-val)*0.7);
+    }
+
+    section>aside>aside>button{
+        display: none;
+    }
+
+    form>button{
+        width: calc(var(--percent-val)*0.75);
+        font-size: var(--font-size-small);
+        border-radius: var(--input-border-radius);
+    
+    }
+}

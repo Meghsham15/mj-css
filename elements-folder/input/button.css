@@ -1,0 +1,7 @@
+button {
+    border: none;
+    padding: 1vw;
+    margin: 0 1vw;
+    background: var(--bg-none);
+    color: var(--sky-blue);
+}

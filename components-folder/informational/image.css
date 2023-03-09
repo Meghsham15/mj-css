@@ -1,0 +1,139 @@
+/* main>section>img {
+    width: calc(var(--percent-val)*0.45);
+    height: calc(var(--width)*0.36);
+    background-color: var(--primary-color);
+} */
+/* 
+section>div>img {
+    width: var(--percent-val);
+    height: calc(var(--width)*0.35);
+    background-color: var(--primary-color);
+    border-radius: var(--cards-margin);
+} */
+
+section>img {
+    width: calc(var(--percent-val)*0.95);
+    margin-left: var(--padding);
+    height: calc(var(--width)*0.35);
+    background: var(--imagine-img);
+    border-radius: var(--cards-margin);
+}
+
+[aria-w="true"]{
+    width: calc(var(--percent-val)*0.5);
+    background: var(--home-img);
+}
+
+section>div>article>img {
+    background-color: var(--card1-img);
+    width: var(--percent-val);
+    height: calc(var(--percent-val)*0.5);
+}
+
+section>aside>article>img{
+    width: var(--percent-val);
+    height: calc(var(--percent-val)*0.6);
+    margin-bottom: calc(var(--p-margin)*1.5);
+    background: var(--sol-img);
+    border-radius: var(--border-radius) 0 0 0;
+}
+
+section>aside>article>div>img {
+    width: calc(var(--percent-val)*0.48);
+    background: var(--sol-img);
+}
+
+section>div>img {
+    width: var(--percent-val);
+    height: calc(var(--width)*0.49);
+    border-radius: var(--border-radius);
+    background: var(--meet-img);
+}
+
+section>div>div>img{
+    width: var(--mini-card-img-w);
+    height: var(--mini-card-img-h);
+    background: var(--mini-card-img);
+}
+
+section>aside>img{
+    height: var(--aside-img-h);
+    border-radius: var(--border-radius);
+    width: calc(var(--percent-val)*0.88);
+    display: block;
+    margin: auto;
+    background: var(--setup-img);
+}
+
+section>aside>aside>img{
+    width: calc(var(--percent-val)*0.7);
+    background: var(--bg-none);
+}
+
+section>div>aside>article>img {
+    width: calc(var(--percent-val)*0.25);
+    margin-right: var(--margin-right);
+    background: var(--bg-none);
+}
+
+footer>div>div>img {
+    width: var(--s-icon-w);
+    height: var(--s-icon-w);
+    margin: 0 var(--footer-m);
+    background: var(--bg-none);
+}
+
+footer>div>article>img{
+    width: calc(var(--s-icon-w)*1.3);
+    height: calc(var(--s-icon-w)*1.3);
+    margin-right: var(--footer-m);
+    background: var(--bg-none);
+    filter: invert(1);
+}
+
+@media (max-width: 816px) {
+    main>section>img {
+        width: calc(var(--percent-val)*1.06);
+        margin-top: calc(var(--p-margin)*0.5);
+    }
+
+    /* section>div>img {
+        width: var(--percent-val);
+        height: calc(var(--width)*0.5);
+        background-color: var(--primary-color);
+        border-radius: var(--cards-margin);
+    } */
+
+    section>img {
+        width: var(--percent-val);
+        margin-left: var(--negative-margin);
+        margin-right: 0;
+        height: calc(var(--width)*0.5);
+        border-radius: var(--cards-margin);
+    }
+
+    section>div>img {
+        width:calc( var(--percent-val));
+        height: calc(var(--width)*0.89);
+        border-radius: var(--border-radius);
+        /* margin-left: calc(var(--negative-margin)*2); */
+    }
+
+    section>aside>img {
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+
+    section>div>aside>article>img {
+        width: calc(var(--percent-val)*0.5);
+        filter: invert(1);
+        margin-right: var(--margin-right);
+        margin: var(--margin-right) 0;
+    }
+
+    [aria-w="true"] {
+        width: var(--percent-val);
+        background: var(--home-img);
+    }
+}

@@ -1,0 +1,6 @@
+footer {
+    padding: 0 var(--padding);
+    display: flex;
+    flex-direction: column;
+    background: var(--footer-bg);
+}

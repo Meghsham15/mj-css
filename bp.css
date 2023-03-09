@@ -1,0 +1,29 @@
+:root{
+    --nav-logo:#498090;
+    --black:gray;
+    --sky-blue:gray;
+    --light-gray:white;
+    --white:gray;
+    --bg-blue:#cee7f3;
+    --gray:gray;
+    --bg-none:gray;
+    --nav-bg:#05526a;
+    --nav-items-bg:#498090;
+    --nav-font:#498090;
+    --cards-bg:#f2f2f2;
+    --button-bg-gray:gray;
+    --img-bg-gray:#f2f2f2;
+    --footer-bg:none;
+    --font-gray:gray;
+    --cards-bg-gray:#f2f2f2;
+
+
+    --home-img:gray;
+    --card1-img:gray;
+    --card2-img:gray;
+    --imagine-img:gray;
+    --sol-img:gray;
+    --meet-img:gray;
+    --setup-img:gray;
+    --mini-card-img:gray;
+}

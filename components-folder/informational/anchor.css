@@ -1,0 +1,21 @@
+
+main>section:nth-child(1)>aside>a{
+    background-color: var(--bg-none);
+    color: var(--sky-blue);
+}
+
+section>div>ul>li>div>a{
+    font-size: calc(var(--font-size-h3)*0.75);
+}
+
+section>div>aside>div>a{
+    margin-right: calc(var(--cards-margin)*3);
+}
+
+
+@media (max-width: 816px) {
+    section>div>aside>div>a {
+        margin-bottom: calc(var(--cards-margin)*0.34);
+    }
+}
+

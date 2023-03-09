@@ -1,0 +1,35 @@
+main>section>aside {
+    width: calc(var(--percent-val)*0.5);
+    margin-left: var(--section-padding-x);
+    /* height:  calc(var(--width)*0.36); */
+}
+
+section>aside>aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--padding);
+    height: var(--percent-val);
+}
+
+section>div>aside{
+    padding: 7vw 0;
+}
+
+footer>div>aside{
+    width: calc(var(--percent-val)*0.24);
+    display: inline-block;
+    padding: calc(var(--padding)*2) 0;
+}
+
+@media (max-width: 816px) {
+    main > section> aside {
+        margin-left: 0;
+        width: calc(var(--percent-val));
+        margin-top: var(--cards-margin);
+        /* height: calc(var(--width)*0.36); */
+    }
+    footer>div>aside {
+        width: calc(var(--percent-val)*0.5);
+        padding: 0;
+    }
+}

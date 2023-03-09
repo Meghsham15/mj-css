@@ -1,0 +1,13 @@
+input{
+    padding: var(--input-padding);
+    font-size: var(--font-size-small);
+    width: calc(var(--percent-val)*0.75);
+    border-radius: var(--input-border-radius);
+    background-color: var(--white);
+}
+
+@media (max-width: 816px) {
+    input{
+        margin-bottom: calc(var(--cards-margin)*0.5);
+    }
+}

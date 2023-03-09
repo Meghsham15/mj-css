@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    /* width: var(--nav-width); */
+    justify-content: space-between;
+    padding: var(--nav-padding);
+    background-color: var(--nav-bg);
+    position: sticky;
+    top: 0;
+}

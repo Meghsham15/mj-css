@@ -1,0 +1,127 @@
+
+section>div {
+    display: block;
+    width: var(--percent-val);
+    padding: 0vw var(--padding);
+    background: var(--black-bg);
+}
+
+[aria-black="true"]{
+    --black-bg:black;
+}
+
+main>section:nth-child(2)>div {
+    width: var(--percent-val);
+    /* padding: 0 var(--section-padding-x); */
+    padding: 0 var(--padding);
+}
+section>div>article>div {
+    padding: var(--card-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section:nth-child(1)>aside>div{
+    margin: calc(var(--p-margin)*1.3) 0;
+    margin-bottom: calc(var(--p-margin)*2);
+}
+
+section>aside>article>div {
+    height: calc(var(--percent-val)*0.38);
+    display: flex;
+    justify-content: space-between;
+}
+
+section>div>ul>li>div{
+    height: var(--percent-val);
+    width: var(--scrolling-card-w);
+    border-radius: var(--border-radius);
+    background: var(--card2-img);
+    padding: var(--padding);
+}
+
+section>div>ul>li>div:nth-child(2){
+    margin: 0 var(--border-radius);
+}
+
+section>div>div {
+    width: var(--percent-val);
+    height: var(--mini-card-height);
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: var(--border) solid var(--black);
+}
+
+section>div>aside>div{
+    margin-bottom: var(--margin-bottom);
+}
+section>div>aside>article>div {
+    width: calc(var(--percent-val)*0.6);
+}
+
+footer>div {
+    width: var(--percent-val);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+footer>div:nth-child(3){
+    border-top: calc(var(--border)*0.5) solid;
+    border-bottom: calc(var(--border)*0.5) solid;
+    align-items: center;
+    color: var(--white);
+}
+
+footer>div>div{
+    display: flex;
+}
+
+@media (max-width: 816px) {
+    section:nth-child(1)>aside>div {
+        margin: calc(var(--p-margin)*1.3) 0;
+        margin-bottom: calc(var(--p-margin)*1.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main > section:nth-child(1) > div {
+        width: calc(var(--percent-val));
+        /* height: calc(var(--width)*0.36); */
+    }
+
+    section>div>ul>li>div{
+        padding: calc(var(--padding)*4);
+    }
+    
+    section>div>ul>li>div:nth-child(2){
+        margin: 0 calc(var(--border-radius)*2);
+    }
+
+    section>div>div {
+        width: var(--percent-val);
+        height: var(--mini-card-height);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: var(--border-radius);
+        border: var(--border) solid var(--black);
+    }
+
+    section>div>aside>div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section > div > aside > article > div {
+        width: var(--percent-val);
+    }
+
+    footer>div{
+        flex-direction: column;
+        align-items: center;
+    }
+}

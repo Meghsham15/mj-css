@@ -1,0 +1,22 @@
+section>div>article>div>ul {
+    margin: var(--border-radius) 0;
+}
+
+section>div>ul{
+    width: var(--percent-val);
+    height: var(--scroll-slider-height);
+    display: flex;
+}
+
+[aria-border="true"]{
+    border-top: var(--border) solid;
+}
+
+@media (max-width: 816px) {
+    section>div>ul{
+        width: var(--percent-val);
+        height: var(--scroll-slider-height);
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}

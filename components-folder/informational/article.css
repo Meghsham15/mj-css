@@ -1,0 +1,104 @@
+section>div>article {
+    width: calc(var(--percent-val)*0.48);
+    height: calc(var(--width)*0.46);
+    display: inline-block;
+    border-radius: var(--cards-margin);
+    background-color: var(--cards-bg);
+    margin-bottom: var(--cards-margin);
+    overflow: hidden;
+    box-shadow: var(--cards-shadow);
+}
+
+section>div>article:nth-child(odd) {
+    margin-right: var(--cards-margin);
+}
+
+section>article {
+    width: var(--percent-val);
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section>aside>article{
+    width: var(--percent-val);
+    height: calc(var(--width)*0.55);
+    display: flex;
+    flex-direction: column;
+}
+
+section>div>div>article {
+    width: 70%;
+    height: 100%;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section>div>aside>article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>div>article {
+    margin: var(--footer-m) 0;
+    display: flex;
+    /* align-items: center; */
+}
+
+[aria-flex="true"]{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+
+[aria-logo="true"]{
+    align-items: center;
+}
+
+@media (max-width: 816px) {
+    section>div>article {
+        width: calc(var(--percent-val));
+        height: calc(var(--width)*1.2);
+        display: inline-block;
+        border-radius: var(--cards-margin);
+        background-color: var(--light-gray);
+        margin-bottom: var(--cards-margin);
+        overflow: hidden;
+    }
+
+    main > section:nth-child(1) > article {
+        width: calc(var(--percent-val));
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    section>aside>article{
+        display: none;
+    }
+
+    section>div>div>article {
+        width: var(--percent-val);
+        height: var(--mini-card-img-h);
+    }
+
+    section>div>aside>article {
+        flex-direction: column;
+    }
+
+    [aria-flex="true"] {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        width: 100%;
+        align-items: center;
+    }
+
+    [flex-col="true"]{
+        flex-direction: column;
+    }
+}

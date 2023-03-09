@@ -1,0 +1,37 @@
+h1 {
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-l);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    /* background: gray; */
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+h3{
+    font-size: var(--font-size-h3);
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+p {
+    font-size: var(--font-size-small);
+    /* letter-spacing: 0.01vw; */
+    word-spacing: var(--p-word-spacing);
+    margin: var(--p-margin) 0;
+    background-color: var(--bg-none);
+    color: var(--black);
+}
+
+a {
+    background-color: var(--bg-none);
+    color: var(--sky-blue);
+}
+
+small{
+    font-size: var(--font-size-small);
+    background-color: var(--bg-none);
+    color: var(--black);
+}

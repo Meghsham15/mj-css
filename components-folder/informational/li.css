@@ -1,0 +1,35 @@
+aside>ul>li{
+    margin-bottom: calc(var(--padding)*1.4);
+}
+
+section>div>ul>li{
+    width: var(--slider-inner-width);
+    height: var(--percent-val);
+    display: flex;
+    justify-content: space-between;
+}
+
+section>aside>ul>li{
+    margin: 0;
+    padding: var(--padding) 0;
+    font-size: var(--font-size-a);
+    
+}
+
+[aria-border="true"]>li{
+    border-bottom: var(--border) solid;
+}
+
+footer>div>aside>ul>li{
+    margin-bottom: var(--footer-m);
+}
+
+@media (max-width: 816px) {
+
+    section>div>ul>li {
+        width: var(--slider-inner-width);
+        height: var(--percent-val);
+        display: flex;
+        justify-content: space-between;
+    }
+}
